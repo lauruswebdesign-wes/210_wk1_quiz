@@ -3,118 +3,78 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Laurus Games</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Your CSS -->
-  <link rel="stylesheet" href="css/style.css" />
+  <title>Laurus Crypto App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-  <header class="site-header">
-    <div class="header-column">
-      <h1 class="site-title">Laurus Games</h1>
-    </div>
-
-    <nav class="header-column main-nav">
-      <a href="#">Top Sellers</a>
-      <a href="#">New Releases</a>
-      <a href="#">News</a>
-    </nav>
-
-    <nav class="header-column user-nav">
-      <a href="#">Login</a>
-      <a href="#">Language <i class="fas fa-caret-down"></i></a>
-      <div class="language-dropdown">
-        <div class="language-option">
-          <img src="img/usa.png" alt="USA" width="30" />
-          English
-        </div>
-        <div class="language-option">
-          <img src="img/mexico.png" alt="Mexico" width="30" />
-          Spanish
-        </div>
-        <div class="language-option">
-          <img src="img/canada.png" alt="Canada" width="30" />
-          French
-        </div>
-      </div>
-      
-    </nav>
-
-    <div class="mobile-menu-icon">
-        <i class="fas fa-bars"></i>
-    </div>
-
-    <div class="mobile-menu">
-      <nav class="mobile-nav-links">
-        <a href="#">Top Sellers</a>
-        <a href="#">New Releases</a>
-        <a href="#">News</a>
-      </nav>
-      <hr />
-      <div class="mobile-language-options">
-        <div class="language-option">
-          <img src="img/usa.png" alt="USA" width="30" /> English
-        </div>
-        <div class="language-option">
-          <img src="img/mexico.png" alt="Mexico" width="30" /> Spanish
-        </div>
-        <div class="language-option">
-          <img src="img/canada.png" alt="Canada" width="30" /> French
-        </div>
-      </div>
-      <hr />
-      <div class="mobile-login">
+  <div class="container">
+   <header class="site-header">
+      <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+      <div class="site-title">Laurus Crypto</div>
+      <div class="search-bar"><input type="text" placeholder="Search..." /></div>
+      <div class="auth-links">
         <a href="#">Login</a>
+        <a href="#">Register</a>
       </div>
-    </div>
-    
-  </header>
-
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Laurus Game</h1>
-      <h2>
-        The only gaming platform that connects you with the past, present and future of game. See what's inside
-      </h2>
-      <button class="cta-button">Browse Our Library</button>
-    </div>
-  </section>
+   </header>
 
 
-  <section class="featured-games">
-    <h2 class="featured-heading">Featured Games</h2>
-    <div class="games-container">
-      <div class="game-card">
-        <img src="img/games/1.jpg" alt="Game 1" />
-        <h3 class="game-title">Game Title 1</h3>
-        <i class="fas fa-heart favorite-icon"></i>
-      </div>
-      <div class="game-card">
-        <img src="img/games/2.jpg" alt="Game 2" />
-        <h3 class="game-title">Game Title 2</h3>
-        <i class="fas fa-heart favorite-icon"></i>
-      </div>
-      <div class="game-card">
-        <img src="img/games/3.jpg" alt="Game 3" />
-        <h3 class="game-title">Game Title 3</h3>
-        <i class="fas fa-heart favorite-icon"></i>
-      </div>
-      <div class="game-card">
-        <img src="img/games/4.jpg" alt="Game 4" />
-        <h3 class="game-title">Game Title 4</h3>
-        <i class="fas fa-heart favorite-icon"></i>
-      </div>
-    </div>
-  </section>
-  
-  
+    <aside class="side-nav">
+      <nav class="menu-items">
+        <a href="#"><span>Dashboard</span> <i class="fas fa-tachometer-alt"></i></a>
+        <a href="#"><span>Markets</span> <i class="fas fa-chart-line"></i></a>
+        <a href="#"><span>Portfolio</span> <i class="fas fa-wallet"></i></a>
+        <a href="#"><span>Watchlist</span> <i class="fas fa-star"></i></a>
+        <a href="#" class="login"><span>Login</span> <i class="fas fa-sign-in-alt"></i></a>
+        <a href="#" class="register"><span>Register</span> <i class="fas fa-user-plus"></i></a>
+        <a href="#" class="bottom-link"><span>Settings</span> <i class="fas fa-cog"></i></a>
+      </nav>
+    </aside>
 
-  <script src="js/main.js"></script>
+    <main>
+      <div class="featured-section">
+        <div class="featured-crypto">
+          <h3><img src="https://cryptoicons.org/api/icon/btc/40" alt="BTC"> Bitcoin</h3>
+          <p>Price: $40,000</p>
+          <p>The original cryptocurrency and a store of value.</p>
+        </div>
+        <div class="featured-crypto">
+          <h3><img src="https://cryptoicons.org/api/icon/eth/40" alt="ETH"> Ethereum</h3>
+          <p>Price: $2,500</p>
+          <p>Smart contracts and decentralized applications leader.</p>
+        </div>
+      </div>
 
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>% Change</th>
+            <th>Market Cap</th>
+            <th>Volume</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="https://cryptoicons.org/api/icon/btc/24" alt="BTC"> Bitcoin</td>
+            <td>$40,000</td>
+            <td>+2%</td>
+            <td>$800B</td>
+            <td>$35B</td>
+          </tr>
+          <tr>
+            <td><img src="https://cryptoicons.org/api/icon/eth/24" alt="ETH"> Ethereum</td>
+            <td>$2,500</td>
+            <td>-1.5%</td>
+            <td>$300B</td>
+            <td>$20B</td>
+          </tr>
+          <!-- Add more rows as needed -->
+        </tbody>
+      </table>
+    </main>
+  </div>
 </body>
 </html>
